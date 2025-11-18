@@ -26,7 +26,7 @@ uilistlayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 frame.Size = UDim2.new(0, 44, 0, 44)
 frame.Position = UDim2.new(0.85, 0, 0, 0)
 frame.BackgroundColor3 = Color3.new(0, 0, 0)
-frame.BackgroundTransparency = 0.3
+frame.BackgroundTransparency = 0.1
 
 textlabel.Size = UDim2.new(1, 0, 1, 0)
 textlabel.BackgroundTransparency = 1
