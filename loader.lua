@@ -61,3 +61,32 @@ local o; o = hookfunction(getrenv().debug.info, newcclosure(function(...)
 end))
 
 setthreadidentity(7)
+-- important notifications
+StarterGui:SetCore("SendNotification", {
+  Title = "! IMPORTANT WARNING !",
+  Text = "This Script Is Pre-Alpha, May Contain Lot Of Bugs.",
+  Duration = 15,
+  Callback = nil,
+  Button1 = "Understood."
+})
+StarterGui:SetCore("SendNotification", {
+  Title = "? IMPORTANT NOTE ?",
+  Text = "This Script Has No GUI.",
+  Duration = 12.5,
+  Callback = nil,
+  Button1 = "Okay."
+})
+StarterGui:SetCore("SendNotification", {
+  Title = "✓ HOW TO TOGGLE ✓",
+  Text = "Rejoin Server To Disable The Script.",
+  Duration = 7.5,
+  Callback = nil,
+  Button1 = "Understood."
+})
+StarterGui:SetCore("SendNotification", {
+  Title = "? HOW TO USE ?",
+  Text = "Make Sure Enable Shiftlock, Then Enemy Should Be Visible On Screen.",
+  Duration = 10,
+  Callback = nil,
+  Button1 = "Understood."
+})
