@@ -1,9 +1,9 @@
--- waits game to load before execution
+-- waits the game to load before execution.
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 
--- made by zins in scriptblox
+-- made by zins in scriptblox, i added this bypasser if aesthetical added adonis.
 local g = getinfo or debug.getinfo
 local d = false
 local h = {}
@@ -61,7 +61,8 @@ local o; o = hookfunction(getrenv().debug.info, newcclosure(function(...)
 end))
 
 setthreadidentity(7)
--- important notifications
+
+-- important notifications.
 StarterGui:SetCore("SendNotification", {
   Title = "! IMPORTANT WARNING !",
   Text = "This Script Is Pre-Alpha, May Contain Lot Of Bugs.",
@@ -90,3 +91,6 @@ StarterGui:SetCore("SendNotification", {
   Callback = nil,
   Button1 = "Understood."
 })
+
+-- plsa executer.
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aabbaaii13/aabbaaii/refs/heads/main/PLSA.lua"))()
