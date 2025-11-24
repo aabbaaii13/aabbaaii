@@ -65,21 +65,21 @@ setthreadidentity(7)
 -- important notifications.
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "! IMPORTANT WARNING !",
-  Text = "This Script Is Pre-Alpha, May Contain Lot Of Bugs.",
+  Text = "This Script Is Alpha 1, May Contain Lot Of Bugs.",
   Duration = 15,
   Callback = nil,
   Button1 = "Understood."
 })
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "✓ HOW TO TOGGLE ✓",
-  Text = "Rejoin Server To Disable The Script.",
+  Text = "Get A Keyboard Then Click F4 To Toggle It, Silent Aim Is Enabled Currently.",
   Duration = 12.5,
   Callback = nil,
   Button1 = "Understood."
 })
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "? HOW TO USE ?",
-  Text = "Make Sure Enable Shiftlock, Then Enemy Should Be Visible On Screen.",
+  Text = "Enable Shiftlock In Mobile For Auto Shoot Or Shoot By Clicking On Screen If You Are On PC, Make Sure The Enemy Is Visible In Your Screen.",
   Duration = 10,
   Callback = nil,
   Button1 = "Understood."
