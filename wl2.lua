@@ -9,6 +9,6 @@ if not isfile("hwid.key") then
 end
 
 local hwid = readfile("hwid.key")
-if whitelist[hwid] then
+if not whitelist[hwid] then
     game.Players.LocalPlayer:Kick("Sign Up In Discord.gg/hnq9AGVMwq")
 end
