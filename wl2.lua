@@ -1,5 +1,5 @@
 local whitelist = {
-    ["ez"] = true,
+    ["2av9fft20mwg5b4hz8wnr4rv8op2hb8k7lhof3fk65432774ep"] = true,
     ["ez"] = true,
 }
 
