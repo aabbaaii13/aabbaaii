@@ -1,0 +1,107 @@
+local jwgrf = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local gnkdjc = Instance.new("Frame", jwgrf)
+local dncnfk = Instance.new("UIStroke", gnkdjc)
+local dkkfgc = Instance.new("UICorner", gnkdjc)
+local ejhfkj = Instance.new("TextLabel", gnkdjc)
+local jjfkjd = Instance.new("Frame", jwgrf)
+local fgnckh = Instance.new("UIStroke", jjfkjd)
+local xnfjkd = Instance.new("UICorner", jjfkjd)
+local kdcejw = Instance.new("TextButton", jjfkjd)
+local jdncfc = Instance.new("TextLabel", jwgrf)
+jwgrf.ResetOnSpawn = false
+jwgrf.Name = "fpscounter"
+
+gnkdjc.Size = UDim2.new(0.2, 0, 0.1, 0)
+gnkdjc.Position = UDim2.new(0.75, 0, 0, 0)
+gnkdjc.BackgroundTransparency = 0
+gnkdjc.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+
+dncnfk.Color = Color3.new(0.2, 0.2, 0.2)
+dncnfk.Thickness = 2
+dncnfk.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+dkkfgc.CornerRadius = UDim.new(0, 10)
+
+ejhfkj.Size = UDim2.new(1, 0, 1, 0)
+ejhfkj.BackgroundTransparency = 1
+ejhfkj.TextColor3 = Color3.new(1, 1, 1)
+ejhfkj.Text = "FPS: 0"
+ejhfkj.TextSize = 24
+ejhfkj.TextScaled = true
+
+jjfkjd.Size = UDim2.new(0.2, 0, 0.05, 0)
+jjfkjd.Position = UDim2.new(0.75, 0, 0.1, 5)
+jjfkjd.BackgroundTransparency = 0
+jjfkjd.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+
+fgnckh.Color = Color3.new(0.2, 0.2, 0.2)
+fgnckh.Thickness = 2
+fgnckh.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+xnfjkd.CornerRadius = UDim.new(0, 10)
+
+kdcejw.Size = UDim2.new(1, 0, 1, 0)
+kdcejw.BackgroundTransparency = 1
+kdcejw.TextColor3 = Color3.new(1, 0, 0)
+kdcejw.Text = "FPS UNLOCKER: OFF"
+kdcejw.TextSize = 12
+kdcejw.TextScaled = true
+
+jdncfc.Size = UDim2.new(0.2, 0, 0.05, 0)
+jdncfc.Position = UDim2.new(0.75, 0, 0, -30)
+jdncfc.BackgroundTransparency = 1
+jdncfc.TextColor3 = Color3.new(1, 1, 1)
+jdncfc.Text = "made by aabbaaii13 on discord"
+jdncfc.TextScaled = true
+
+local fkdjfn = false
+
+kdcejw.MouseButton1Click:Connect(function()
+    fkdjfn = not fkdjfn
+
+    if fkdjfn then
+        kdcejw.Text = "FPS UNLOCKER: ON"
+
+        setfpscap(999)
+        kdcejw.TextColor3 = Color3.new(0, 1, 0)
+    else
+        kdcejw.Text = "FPS UNLOCKER: OFF"
+
+        setfpscap(60)
+        kdcejw.TextColor3 = Color3.new(1, 0, 0)
+    end
+end)
+
+
+local fkdjfn = 0
+local jcnfdc = 0
+local fncjwk = 0
+game:GetService("RunService").RenderStepped:Connect(function(fidodj)
+    jcnfdc += 1
+    fncjwk = fncjwk + fidodj
+    if fncjwk >= 0.5 then
+        local fnkdjf = jcnfdc / fncjwk
+        ejhfkj.Text = string.format("FPS: %.1f", fnkdjf)
+        if fnkdjf >= 244 then
+            ejhfkj.TextColor3 = Color3.new(0, 0.75, 1)
+        elseif fnkdjf >= 165 then
+            ejhfkj.TextColor3 = Color3.new(0, 0, 1)
+        elseif fnkdjf >= 120 then
+            ejhfkj.TextColor3 = Color3.new(0, 0, 0.5)
+        elseif fnkdjf < 25 then
+            ejhfkj.TextColor3 = Color3.new(1, 0, 0)
+        elseif fnkdjf < 45 then
+            ejhfkj.TextColor3 = Color3.new(1, 1, 0)
+        elseif fnkdjf < 90 then
+            ejhfkj.TextColor3 = Color3.new(0, 1, 0)
+        else
+            ejhfkj.TextColor3 = Color3.new(0, 0.5, 0)
+        end
+        
+        fncjwk = 0
+        jcnfdc = 0
+    end
+end)
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/aabbaaii13/aabbaaii/refs/heads/main/Popup2'))()

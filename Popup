@@ -1,0 +1,2 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/aabbaaii13/aabbaaii/refs/heads/main/Popup2'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/aabbaaii13/Gui/refs/heads/main/ABAUIHUB'))()

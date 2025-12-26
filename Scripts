@@ -1,0 +1,216 @@
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Flex Your Ping/Fps V1.8")
+
+local credits = PhantomForcesWindow:NewSection("Miscs/Credits")
+
+credits:CreateToggle("1FPS", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(1)
+wait()
+
+end
+print("1fps")
+end)
+
+credits:CreateToggle("fakelag (test)", function(value)
+
+main = value
+
+while main do
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.01)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0.001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.0001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0.00001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.000001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.01)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0.001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.0001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0.00001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = true
+wait(0.000001)
+local Player = game.Players.LocalPlayer local Char = Player.Character or Player.CharacterAdded:Wait() Char.Archivable = true Char:WaitForChild("HumanoidRootPart").Anchored = false
+wait(0)
+
+end
+print("FakeLag")
+end)
+
+credits:CreateButton("———————————", function()
+print("line")
+end)
+
+credits:CreateButton("copy guns.lol link", function()
+setclipboard("https://guns.lol/aabbaaii")
+print("guns.lol link copied!")
+end)
+
+credits:CreateButton("Made by aabbaaii", function()
+print("Credit: aabbaaii13 on discord")
+end)
+
+local main2 = PhantomForcesWindow:NewSection("FakeFps2")
+
+main2:CreateToggle("500FPS", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(500)
+wait()
+
+end
+print("500fps on")
+end)
+
+main2:CreateToggle("1K FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(1000)
+wait()
+
+end
+print("1000fps on")
+end)
+
+main2:CreateToggle("5K FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(5000)
+wait()
+
+end
+print("5000fps on")
+end)
+
+main2:CreateToggle("10K FPS", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(10000)
+wait()
+
+end
+print("10000fps on")
+end)
+
+main2:CreateToggle("50K FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(50000)
+wait()
+
+end
+print("50000fps on")
+end)
+
+main2:CreateToggle("100K FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(100000)
+wait()
+
+end
+print("100000fps on")
+end)
+
+main2:CreateToggle ("500K FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(500000)
+wait()
+
+end
+print("500000fps on")
+end)
+
+main2:CreateToggle("1M FPS on", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(1000000)
+wait()
+
+end
+print("1000000fps on")
+end)
+
+local main = PhantomForcesWindow:NewSection("FakeFps")
+
+main:CreateToggle("RealisticFps 1", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(1)
+wait(0.1)
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(2)
+wait(0.2)
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(0)
+wait(0)
+end
+print("RealisticFps is working")
+end)
+
+main:CreateToggle("RealisticFps 240", function(value)
+
+main = value
+
+while main do
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(240)
+wait(0.1)
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(241)
+wait(0.2)
+game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(239)
+wait(0)
+end
+print("RealisticFps is working")
+end)
+
+main:CreateToggle("Crazy Fps", function(value)
+
+main = value
+
+while main do
+    local args = {
+        [1] = math.random(250, 500)
+    }
+ 
+    game:GetService("ReplicatedStorage").FPSUpdateEventIKnowYouReCheater:FireServer(unpack(args))
+    wait(0.1)
+end
+print("CrazyFps is working")
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "READ BOTTOM";
+	Text = "MY DISPLAY IS KJ TEMU";
+	Icon = "rbxthumb://type=Asset&id=101659853095951&w=150&h=150"})
+Duration = 120; 
