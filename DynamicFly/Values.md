@@ -1,4 +1,4 @@
-**!EXPERIENCED SCRIPTERS ONLY!**
+**! EXPERIENCED SCRIPTERS ONLY !**
 
 # External Values
 
@@ -23,5 +23,4 @@ Changing Its `Value` Will Update The Speed Used By The Flight System.
 The **UIScale** Controls The Size Of The Main GUI.
 Changing Its `Scale` Allows You To Make The GUI Smaller Or Larger Externally.
 ~
-These Values Can Be Useful If You Want To Connect Dynamic Fly To **Your Own Keybinds, GUI Or Other Code** Without Needing To Modify The Main Flight System.
-The Script Does Not Have A Built-In Custom Keybind / GUI Editor — These Values Simply Give External Code A Way To Control The Existing System.
+These Values Can Be Useful If You Want To Connect Dynamic Fly To **Your Own Keybinds, GUI Or Other Code** Without Needing To Deobfuscating The Entire Script.
