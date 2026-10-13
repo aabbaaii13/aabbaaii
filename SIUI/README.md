@@ -31,11 +31,14 @@
 ## Dependencies Aka Links:
 - "WindUI (UI Library)" https://github.com/Footagesus/WindUI
 - "UniversalSynSaveInstance" https://github.com/luau/UniversalSynSaveInstance
+- 
 *Both Projects Are Loaded From Their Upstream Repositories At Current Runtime*
 
 ## Credits & Developers & Contributors:
 **UI & Options: aabbaaii13 From GitHub/Discord (solo)
+
 SynSaveInstance Functionalities: https://github.com/phoriah https://github.com/centerepic https://github.com/wally2471 https://github.com/ActualMasterOogway
+
 The UI Library: https://github.com/Footagesus https://github.com/deogw https://github.com/BitRevenant https://github.com/itzdanti https://github.com/IIIllIllIIlIlllIIIIlIlIIlIlIIIlI https://github.com/Soyodk** 
 
-### Licensing: This Project Is Licensed Under The MIT License See "LICENSE" (https://github.com/aabbaaii13/aabbaaii?tab=MIT-1-ov-file)
+### Licensing: This Project Is Licensed Under The MIT License See The https://github.com/aabbaaii13/aabbaaii?tab=MIT-1-ov-file
