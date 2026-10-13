@@ -34,7 +34,7 @@
   
 *Both Projects Are Loaded From Their Upstream Repositories At Current Runtime*
 
-## Credits & Developers & Contributors:
+## Developers & Contributors:
 **UI & Options: aabbaaii13 From GitHub/Discord (solo)**
 
 **SynSaveInstance Functionalities: https://github.com/phoriah https://github.com/centerepic https://github.com/wally2471 https://github.com/ActualMasterOogway**
