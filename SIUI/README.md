@@ -41,4 +41,4 @@
 
 **The UI Library: https://github.com/Footagesus https://github.com/deogw https://github.com/BitRevenant https://github.com/itzdanti https://github.com/IIIllIllIIlIlllIIIIlIlIIlIlIIIlI https://github.com/Soyodk** 
 
-### Licensing: This Project Is Licensed Under The MIT License See The https://github.com/aabbaaii13/aabbaaii?tab=MIT-1-ov-file
+## This Project Is Licensed Under The MIT License See The https://github.com/aabbaaii13/aabbaaii?tab=MIT-1-ov-file
