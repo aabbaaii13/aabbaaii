@@ -2,7 +2,7 @@
 ### A Custom GUI For UniversalSynSaveInstance Using The WindUI (UI Library)
 
 ## The Features:
-- Save Modes: "optimized" "full" "scripts"
+- The Saving Modes: 'optimized' 'full' 'scripts'
 - Custom File Path And Output Settings
 - Binary Format And Compression Options
 - Safety Settings & Risky Service Restrictions
@@ -14,23 +14,23 @@
 - USSI Repository License & Discord Server Links
 
 ## How To Use It:
-1. Just Execute The Script On Your Executor (No Roblox Studio)
+1. Just Execute It On Your Executor (No Roblox Studio)
 2. Close/Open The GUI Using The Open Button Or Press RightControl Key
-3. Configure Your Preferred Options And UI Settings
-4. Go To General Tab And Click Start Saving The Game Now
+3. Configure Your Preferred Options & UI Settings
+4. Go To General Tab & Click Start Saving The Game Now
 
 ## Current Available Tabs:
-- General — Save Mode File Path Compression And Main Save Options
-- The Safety — Safe Mode LocalScripts FPS Settings And Service Restrictions
-- Decompilers — Decompilation Script Cache Timeouts And Bytecode
-- Filtration — Nil Instances Players And Other Instance Options
-- Advanced — Additional Save And Property Options
-- UI Settings — Themes Backgrounds Fonts Keybinds And Window Customization
-- Credits — Project Information And Links
+- **General** ~ Save Mode File Path Compression And Main Save Options
+- **The Safety** ~ Safe Mode LocalScripts FPS Settings And Service Restrictions
+- **Decompilers** ~ Decompilation Script Cache Timeouts And Bytecode
+- **Filtration** ~ Nil Instances Players And Other Instance Options
+- **Advanced** ~ Additional Save And Property Options
+- **UI Settings** ~ Themes Backgrounds Fonts Keybinds And Window Customization
+- **Credits** ~ Project Information And Links
 
 ## Dependencies Aka Links:
-- "WindUI (UI Library)" https://github.com/Footagesus/WindUI
-- "UniversalSynSaveInstance" https://github.com/luau/UniversalSynSaveInstance
+- WindUI (UI Library): https://github.com/Footagesus/WindUI
+- UniversalSynSaveInstance: https://github.com/luau/UniversalSynSaveInstance
   
 *Both Projects Are Loaded From Their Upstream Repositories At Current Runtime*
 
